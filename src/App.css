@@ -1,0 +1,44 @@
+/* src/App.css or src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure html and body take full height and apply the gradient */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrollbars if content is smaller than viewport */
+}
+
+body {
+  /* background: linear-gradient(
+    to bottom right,
+    #1a202c,
+    #2d3748,  
+    #000000
+  );
+  font-family: "Inter", sans-serif; 
+} */
+
+  background: linear-gradient(
+    to bottom right,
+    #0d1117,
+    /* GitHub dark theme background */ #161b22,
+    /* Slightly lighter */ #21262d /* Even lighter */
+  );
+
+  font-family: "Inter", sans-serif; /* Ensure Inter font is used if available */
+}
+
+/* You might need to add this if #root (where your React app mounts) doesn't take full height */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
